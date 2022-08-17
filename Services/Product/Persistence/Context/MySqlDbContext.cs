@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Domain.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Persistence.Context
 {
@@ -10,7 +11,8 @@ namespace Persistence.Context
 
         public MySqlDbContext(DbContextOptions<MySqlDbContext> options) : base(options)
         {
-
         }
+
+        public DbSet<Product> Product { get; set; }
     }
 }
