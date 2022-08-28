@@ -1,5 +1,5 @@
-using Microsoft.EntityFrameworkCore;
 using ProductApi.Context;
+using ProductApi.Repository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,16 +12,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<MySqlDbContext>();
 
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+
 var app = builder.Build();
-
-/*var connection = app.Configuration["MySQlConnection:MySQlConnectionString"];
-
-builder
-    .Services
-    .AddDbContext<MySqlDbContext>
-    (options => 
-        options.UseMySql(connection)
-    );*/
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
