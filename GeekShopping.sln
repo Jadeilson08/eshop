@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeekShopping.Frontend.WebAp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{DD84E075-3A02-4EE3-BEEC-02F307204C43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductApi", "Product\ProductApi\ProductApi.csproj", "{549A1CC8-7C55-4101-B1FB-6E4A3517E7C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductApi", "Product\ProductApi\ProductApi.csproj", "{549A1CC8-7C55-4101-B1FB-6E4A3517E7C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
